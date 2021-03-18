@@ -47,7 +47,7 @@ set noshowmode
 " COMMANDS
 " ___________________________________________________
 "
-if filereadable(expand("~/.vim/mappings.vim"))
+if filereadable(expand("~/.vim/commands.vim"))
   source ~/.vim/commands.vim
 endif
 
