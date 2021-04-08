@@ -40,6 +40,8 @@ set ruler
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
+" Enable backspacing over tabs, line breaks, and start-of-insert
+set backspace=indent,eol,start
 " Yank selection to system clipboard
 set clipboard^=unnamed,unnamedplus
 " Hide mode from bottom of the screen (shown by `vim-airline` instead)
