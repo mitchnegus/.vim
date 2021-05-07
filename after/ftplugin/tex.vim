@@ -6,4 +6,7 @@
 set softtabstop=2
 set shiftwidth=2
 set autoindent
+set linebreak
 set fileformat=unix
+" Use the TeX specific deathstar version
+colorscheme deathstar-tex
