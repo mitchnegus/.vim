@@ -10,3 +10,5 @@ set linebreak
 set fileformat=unix
 " Use the TeX specific deathstar version
 colorscheme deathstar-tex
+" Compile the document using a provided makefile
+nnoremap <silent> <leader>t :call ft#tex_compile#makeCompile()<CR>

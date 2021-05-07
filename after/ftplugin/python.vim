@@ -16,5 +16,5 @@ set fileformat=unix
 let &colorcolumn="73,".join(range(80,999),",")
 
 " Bind `,X` to save file if modified and execute python script in a buffer.
-nnoremap <silent> <Leader>x :call ft#run_python#SaveAndExecutePython()<CR>
-vnoremap <silent> <Leader>x :<C-u>call ft#run_python#SaveAndExecutePython()<CR>
+nnoremap <silent> <leader>x :call ft#run_python#SaveAndExecutePython()<CR>
+vnoremap <silent> <leader>x :<C-u>call ft#run_python#SaveAndExecutePython()<CR>
