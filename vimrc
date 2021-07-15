@@ -46,6 +46,8 @@ set backspace=indent,eol,start
 set clipboard^=unnamed,unnamedplus
 " Hide mode from bottom of the screen (shown by `vim-airline` instead)
 set noshowmode
+" Default 'split' adds buffer at the bottom
+set splitbelow
 " Default 'vsplit' adds buffer to the right
 set splitright
 
