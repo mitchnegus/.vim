@@ -4,4 +4,6 @@ if exists("did_load_filetypes")
 endif
 augroup filetypedetect
 	au! BufRead,BufNewFile *.bib	setfiletype tex
+	au! BufRead,BufNewFile *.oc	setfiletype c
+	au! BufRead,BufNewFile *.oh	setfiletype c
 augroup end
