@@ -23,10 +23,10 @@ let s:white         = ['#FFFFFF',   15] " Function color
 let s:lime          = ['#00FF00',   46] " String color
 let s:green3        = ['#00D700',   40] " Visual mode (highlight) text color
 let s:skyblue1      = ['#87D7FF',  117] " Escaped text color
-let s:red           = ['#FF0000',  196] 
+let s:red           = ['#FF0000',  196]
 let s:sandybrown    = ['#FFAF5F',  215]
 let s:grey3         = ['#080808',  232] " Background color
-let s:grey7         = ['#121212',  233] 
+let s:grey7         = ['#121212',  233]
 let s:grey11        = ['#1c1c1c',  234] " Alternate background color
 let s:grey15        = ['#262626',  236] " Visual mode (highlight) color
 let s:grey35        = ['#585858',  240] " Line number/cursor background color
@@ -79,7 +79,7 @@ endfunction
 
 
 "
-" --- Vim interface ------------------------------------------------------------
+" === VIM INTERFACE ============================================================
 "
 
 call s:hi('Normal')
@@ -125,7 +125,15 @@ call s:hi('Todo', s:grey3, s:sandybrown, s:bold)
 call s:hi('SignColumn')
 
 "
-" --- Programming languages ----------------------------------------------------
+" --- Custom Groups ------------------------------------------------------------
+"
+
+" Trailing whitespace, and spaces before tabs
+call s:hi('ExtraWhitespace', s:green3, s:grey15)
+
+
+"
+" === PROGRAMMING LANGUAGES ====================================================
 "
 
 call s:hi('Statement', s:grey54, s:default_bg, s:bold)

@@ -50,6 +50,10 @@ set noshowmode
 set splitbelow
 " Default 'vsplit' adds buffer to the right
 set splitright
+" Highlight trailing whitespace (but not when typing at the end of the line)
+:autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " for each buffer
+:autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " not while typing
+:autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 
 " COMMANDS
