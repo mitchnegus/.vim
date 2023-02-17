@@ -3,12 +3,12 @@
 "
 " (These settings are run after /usr/share/vim/vim*/ftplugin/tex.vim)
 
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
-set linebreak
-set fileformat=unix
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
+setlocal autoindent
+setlocal linebreak
+setlocal fileformat=unix
 " Use the TeX specific deathstar version
 colorscheme deathstar-tex
 " Compile the document using a provided makefile

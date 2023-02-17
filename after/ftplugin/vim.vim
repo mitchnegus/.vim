@@ -3,12 +3,12 @@
 "
 " (These settings are run after /usr/share/vim/vim*/ftplugin/vim.vim)
 
-set textwidth=80
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
-set fileformat=unix
+setlocal textwidth=80
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
+setlocal autoindent
+setlocal fileformat=unix
 
 " Add columns to mark the end of lines
-let &colorcolumn=join(range(81,999),",")
+let &l:colorcolumn=join(range(81,999),",")
