@@ -18,13 +18,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-dispatch'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
+" Plugin 'name/of/plugin/here'
+if filereadable(expand("~/.vim/local_plugins.vim"))
+  source ~/.vim/local_plugins.vim
+endif
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

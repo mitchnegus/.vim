@@ -10,20 +10,9 @@ end
 let g:tex_flavor = "latex"
 
 
-" vim-airline OPTIONS
+" LOCAL OPTIONS
 " ___________________________________________________
 "
-let g:airline_theme='minimalist'
-let g:airline_powerline_fonts=1
-
-
-" YouCompleteMe OPTIONS
-" ___________________________________________________
-"
-let g:ycm_autoclose_preview_window_after_insertion = 1
-
-
-" SimpylFold OPTIONS
-" ___________________________________________________
-"
-let g:SimpylFold_docstring_preview = 1
+if filereadable(expand("~/.vim/local_options.vim"))
+  source ~/.vim/local_options.vim
+endif
