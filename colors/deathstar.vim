@@ -20,8 +20,10 @@ endif
 let g:colors_name = 'deathstar'
 
 let s:white         = ['#FFFFFF',   15] " Function color
-let s:lime          = ['#00FF00',   46] " String color
+let s:darkgreen     = ['#005F00',   22]
 let s:green3        = ['#00D700',   40] " Visual mode (highlight) text color
+let s:lime          = ['#00FF00',   46] " String color
+let s:darkred       = ['#8B0000',   88]
 let s:skyblue1      = ['#87D7FF',  117] " Escaped text color
 let s:red           = ['#FF0000',  196]
 let s:sandybrown    = ['#FFAF5F',  215]
@@ -232,8 +234,8 @@ call s:hi('diffNewFile', s:grey39)
 call s:hi('diffIndexLine', s:grey39)
 call s:hi('diffLine', s:grey39)
 call s:hi('diffSubname', s:grey39)
-call s:hi('diffAdded', s:grey54, s:lime)
-call s:hi('diffRemoved', s:grey54, s:red)
+call s:hi('diffAdded', s:grey74, s:darkgreen)
+call s:hi('diffRemoved', s:grey74, s:darkred)
 
 
 "
