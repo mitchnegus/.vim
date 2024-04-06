@@ -10,6 +10,7 @@
 " To test using the -u option (see https://stackoverflow.com/a/22543937/8754471)
 set nocompatible
 
+
 " PLUGINS
 " ___________________________________________________
 "
@@ -51,9 +52,9 @@ set splitbelow
 " Default 'vsplit' adds buffer to the right
 set splitright
 " Highlight trailing whitespace (but not when typing at the end of the line)
-:autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " for each buffer
-:autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " not while typing
-:autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " for each buffer
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/  " not while typing
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 
 " COMMANDS
