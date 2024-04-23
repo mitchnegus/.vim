@@ -38,6 +38,8 @@ set title
 set number
 " Show the cursor position
 set ruler
+" Break lines between words
+set linebreak
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
