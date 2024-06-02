@@ -7,12 +7,12 @@ end
 " ___________________________________________________
 "
 let mapleader = ","
-" Simplify return to normal mode (double semicolon from insert and visual modes)
+" Simplify return to normal mode
 imap ;l <Esc><Right>
 xmap ;l <Esc><Right>
 nmap ;l <Nop>
 " Simplify window navigation in normal mode
-nnoremap <C-J>  <C-W><C-J>
+nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
