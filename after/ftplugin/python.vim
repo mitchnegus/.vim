@@ -12,6 +12,11 @@ setlocal expandtab
 setlocal autoindent
 setlocal fileformat=unix
 
+" Manage multi-line parenthetical/brace indentation
+let g:python_indent = {}
+let g:python_indent.open_paren = "shiftwidth()"
+let g:python_indent.closed_paren_align_last_line = v:false
+
 " Add columns to mark the end of long docstring lines and normal lines
 let &l:colorcolumn="73,".join(range(80,999),",")
 
